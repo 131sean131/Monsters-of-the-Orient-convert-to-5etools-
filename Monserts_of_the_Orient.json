@@ -1,0 +1,786 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MonsertsoftheOrient",
+				"abbreviation": "MotO",
+				"full": "Monserts of the Orient",
+				"url": "",
+				"authors": [
+					"Marc Altfuldisch"
+				],
+				"convertedBy": [
+					"Hawkeye"
+				]
+			}
+		],
+		"dateAdded": 1611955083,
+		"dateLastModified": 1611955083
+	},
+	"monster": [
+		{
+			"name": "Aka Manto",
+			"group": "spirit",
+			"source": "MonsertsoftheOrient",
+			"page": 10,
+			"size": "M",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"spirit"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 12",
+				"average": 30
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 11,
+			"wis": 13,
+			"cha": 8,
+			"skill": {
+				"athletics": "+7",
+				"insight": "+5",
+				"stealth": "+7"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 11,
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"The languages if knew in life",
+				"telepathy 120ft."
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The aka manto has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Aka Manto Existence",
+					"entries": [
+						"The aka manto is on the Ethereal Plane until its Malignant  question has been answered. It can see 120 feet into the Material Plane when it is on the Ethereal Plane. The aka manto is bound to a certain point and can only travel up to 120 feet away from it. Once it chooses a target, it only uses any of its abilities on that target until either it or its target is dead or until its target is further than 120 feet away from the point the aka manto is bound to."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The aka manto can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"The aka manto attacks twice with its claws."
+					]
+				},
+				{
+					"name": "Claw.",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Strangle.",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage, and the target is {@condition grappled}. Until this grapple ends, the target is {@condition incapacitated} and cannot breathe. On each of the aka manto’s turns, the target suffers an additional 10 ({@damage 2d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Possession.",
+					"entries": [
+						"One humanoid that the aka manto can see must succeed on a {@dc 11} Charisma saving throw or be possessed by the aka manto; the aka manto then disappears, and the target is {@condition incapacitated} and loses control of its body. The aka manto now controls the body but doesn’t deprive the target of awareness. The aka manto can’t be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. It otherwise uses the possessed target’s statistics, but doesn’t gain access to the target’s knowledge, class features, or proficiency. ",
+						"While possessing a creature in this manner, the aka manto will not interact with its surroundings or other creatures, but only attempt to kill its host as quickly as possible. ",
+						"The possession lasts until the body drops to 0 hit points, the aka manto ends it as a bonus action, or the aka manto is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the aka manto appears in an unoccupied space within 5 feet of the body. The target is immune to this aka manto’s Possession for 24 hours after the possession ends.",
+						"If the target succeeds its saving throw, the aka manto will ask its question again."
+					]
+				},
+				{
+					"name": "Malignant Question.",
+					"entries": [
+						"The aka manto targets a creature it can see within 30 feet of it, telepathically asking it “Red or blue?”. If the target creature doesn’t answer, it must make a {@dc 11} Wisdom saving throw, taking 14 ({@damage 4d6}) psychic damage on a failed save, or half that damage on a successful save."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"The aka manto is a rare but violent spirit that is bound to particularly filthy areas. More often that not, this includes outhouses. An aka manto forms when a humanoid that has lived an unclean and dishonorable life dies in a filthy area. In undeath they become bound to the place where they died, tormenting the living for eternity.",
+					"An aka manto resembles a rotten and bruised corpse, though it is incorporeal in nature. It has elongated arms and big hands with elongated fingers, each with a large,",
+					"razor-sharp claw at its end. Malignant Question. The aka manto, bound to its location, lies in waiting on the Ethereal Plane for a living creature to come near it. Once it has chosen a target, it",
+					"telepathically asks it “Red or blue?”. The response determines how the aka manto attempts to kill its target. If the target answers “red”, the aka manto will try to claw its target to death, soaking its target’s clothes in blood. If the target answers “blue”, it will",
+					"attempt to strangle its target until it turns blue. If the target answers a different color, the aka manto will try to possess the target so it can make the target commit suicide. ",
+					"There are, however, a few ways to avoid the aka manto’s wrath. If the target answers that it doesn’t want a cape, the aka manto will leave the target alone. If the target moves further away than 120 feet from the point the aka manto is bound to, the ako manto will be unable to follow. Only if the aka manto is destroyed will its cursed existence end.",
+					"Undead Nature. An aka manto doesn’t require air, food, drink, or sleep."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/pajHV9o.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/5NtmQNA.png",
+			"traitTags": [
+				"Incorporeal Movement",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"LF",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"O",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Giant Turtle",
+			"source": "MonsertsoftheOrient",
+			"page": 147,
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"condition": "natural armor",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 24",
+				"average": 57
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 19,
+			"int": 2,
+			"wis": 12,
+			"cha": 13,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"fire"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The giant trutle can breathe air and water."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Giant Panda",
+			"source": "MonsertsoftheOrient",
+			"page": 147,
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "8d8 + 24",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 10,
+			"cha": 13,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [],
+			"cr": "1",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The panda makes two attacks: one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Honey Badger",
+			"source": "MonsertsoftheOrient",
+			"page": 147,
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"condition": "natural armor",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 24",
+				"average": 57
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 19,
+			"int": 2,
+			"wis": 12,
+			"cha": 13,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"fire"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The giant trutle can breathe air and water."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Giant Panda",
+			"source": "MonsertsoftheOrient",
+			"page": 147,
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "8d8 + 24",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 10,
+			"cha": 13,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [],
+			"cr": "1",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The panda makes two attacks: one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Giant Turtle",
+			"source": "MonsertsoftheOrient",
+			"page": 147,
+			"size": "L",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 24",
+				"average": 57
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 19,
+			"int": 2,
+			"wis": 12,
+			"cha": 13,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"fire"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The giant trutle can breathe air and water."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Honey Badger",
+			"source": "MonsertsoftheOrient",
+			"page": 147,
+			"size": "S",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"condition": "natural armor",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 24",
+				"average": 57
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 19,
+			"int": 2,
+			"wis": 12,
+			"cha": 13,
+			"passive": 11,
+			"resist": [
+				"fire"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The giant trutle can breathe air and water."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Giant Panda",
+			"source": "MonsertsoftheOrient",
+			"page": 147,
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "8d8 + 24",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 10,
+			"cha": 13,
+			"passive": 10,
+			"resist": [],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The giant panda has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The panda makes two attacks: one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Honey Badger",
+			"source": "MonsertsoftheOrient",
+			"page": 147,
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6 + 6",
+				"average": 27
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 20
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 2,
+			"wis": 11,
+			"cha": 12,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the honey badger can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The honey badger has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Frenzied Twist.",
+					"entries": [
+						"The honey badger has advantage on ability checks and saving throws made to escape a grapple."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"The honey badger attacks once with its bite and once with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The honey badger has a fairly long body, but is distinctly thick-set and broad across the back. Its skin is remarkably loose, and allows it to turn and twist freely within it. It has short and sturdy legs, with five toes on each foot. The feet are armed with very strong claws, which are short on the hind legs and remarkably long on the forelimbs. Although mostly solitary, honey badgers may hunt together in pairs during their breeding season. They live alone in self-dug holes."
+				]
+			},
+			"traitTags": [
+				"Aggressive",
+				"Keen Senses"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Giant Turtle",
+			"source": "MonsertsoftheOrient",
+			"page": 147,
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"condition": "natural armor",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 24",
+				"average": 57
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 19,
+			"int": 2,
+			"wis": 12,
+			"cha": 13,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"fire"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The giant trutle can breathe air and water."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
